@@ -10,7 +10,7 @@ This is partially based on code in this [gist](https://gist.github.com/mig-hub/5
 
 ```
 $ bundle install
-$ PORT=4567 DB_URL=postgres:///mydb foreman start
+$ PORT=4567 DB_URL=postgres:///mydb SSE_URL=http://localhost:4567 foreman start
 $ open http://localhost:4567/
 ```
 
