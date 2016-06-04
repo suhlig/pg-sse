@@ -1,0 +1,9 @@
+<h2><%= events.size %> letzte Ereignisse</h2>
+
+<% events.each do |event| %>
+<div style="margin-bottom: 0.5em;">
+  <code>
+    <%= event %>
+  </code>
+</div>
+<% end %>
