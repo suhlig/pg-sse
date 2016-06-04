@@ -2,7 +2,7 @@
 
 Listens to a [Postgres channel](https://www.postgresql.org/docs/current/static/sql-listen.html) and distributes any messages to HTTP clients via [server-sent events](https://www.w3.org/TR/eventsource/) (SSE).
 
-The channel could be filled e.g. from a database trigger, as demonstrated in [Brent Tubbs'](https://github.com/btubbs) [Postgres + React TodoMVC Example](https://github.com/btubbs/todopy-pg/blob/master/todos/migrations/0002-add-todos-table/forward.sql). A new DB record would then trigger a notification to be sent to the channel, which is picked up by the [`pg_listen.rb`](lib/pg_listen.rb) process, which posts it via HTTP to [`sse_server.rb`](lib/sse_server.rb), which broadcasts it via SSE to all connected clients.
+The channel could be filled e.g. from a database trigger, as demonstrated in [Brent Tubbs'](https://github.com/btubbs) [Postgres + React TodoMVC Example](https://github.com/btubbs/todopy-pg/blob/master/todos/migrations/0002-add-todos-table/forward.sql). A new DB record would then trigger a notification to be sent to the channel, which is picked up by the [`pg_listen.rb`](https://github.com/suhlig/pg-sse/blob/master/lib/pg_listen.rb) process, which posts it via HTTP to [`sse_server.rb`](https://github.com/suhlig/pg-sse/blob/master/lib/sse_server.rb), which broadcasts it via SSE to all connected clients.
 
 This is partially based on code in this [gist](https://gist.github.com/mig-hub/5633280).
 
