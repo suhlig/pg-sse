@@ -1,5 +1,9 @@
-require 'sinatra'
+# frozen_string_literal: true
 
+require 'sinatra'
+require 'pathname'
+
+set :root, Pathname(__dir__) / '..'
 set server: 'thin'
 set connections: []
 set events: []
@@ -17,19 +21,18 @@ end
 
 get '/' do
   markdown(:README,
-    layout: true,
-    layout_engine: 'erb',
-    locals: {
-      title: 'pg-sse - Relays Database Updates to an SSE stream',
-    },
-    input: 'GFM',
-  )
+           layout: true,
+           layout_engine: 'erb',
+           locals: {
+             title: 'pg-sse - Relays Database Updates to an SSE stream'
+           },
+           input: 'GFM')
 end
 
 get '/events' do
   erb :events, layout: true, locals: {
     title: 'Haushaltsbuch - letzte Ereignisse',
-    events: settings.events.reverse,
+    events: settings.events.reverse
   }
 end
 

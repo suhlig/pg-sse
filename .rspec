@@ -1,0 +1,6 @@
+--backtrace
+--color
+--format documentation
+--order rand
+--tty
+-I lib

@@ -1,9 +1,13 @@
+# frozen_string_literal: true
+
 require 'sequel'
 require 'json'
 require 'rest-client'
 
+# rubocop:disable Lint/RescueWithoutErrorClass
 url = begin
-  JSON.parse(ENV.fetch('VCAP_SERVICES'))['elephantsql'].first['credentials']['uri']
+  elephantsql = JSON.parse(ENV.fetch('VCAP_SERVICES'))['elephantsql']
+  elephantsql.first['credentials']['uri']
 rescue
   ENV.fetch('DB_URL')
 end
