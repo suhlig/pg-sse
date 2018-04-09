@@ -3,12 +3,10 @@
 require 'sequel'
 require 'json'
 require 'rest-client'
-
-# rubocop:disable Lint/RescueWithoutErrorClass
 url = begin
   elephantsql = JSON.parse(ENV.fetch('VCAP_SERVICES'))['elephantsql']
   elephantsql.first['credentials']['uri']
-rescue
+rescue StandardError
   ENV.fetch('DB_URL')
 end
 
