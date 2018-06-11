@@ -64,7 +64,7 @@ GEM
       json
       websocket (~> 1.0)
     rack (2.0.5)
-    rack-protection (2.0.2)
+    rack-protection (2.0.3)
       rack
     rack-test (1.0.0)
       rack (>= 1.0, < 3)
@@ -103,10 +103,10 @@ GEM
     ruby-progressbar (1.9.0)
     ruby_dep (1.5.0)
     sequel (5.9.0)
-    sinatra (2.0.2)
+    sinatra (2.0.3)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.2)
+      rack-protection (= 2.0.3)
       tilt (~> 2.0)
     thin (1.7.2)
       daemons (~> 1.0, >= 1.0.9)
