@@ -3,6 +3,7 @@
 source 'https://rubygems.org'
 
 gem 'kramdown'
+gem 'kramdown-parser-gfm'
 gem 'pg'
 gem 'rest-client'
 gem 'sequel'

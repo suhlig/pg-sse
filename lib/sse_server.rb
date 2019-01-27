@@ -2,6 +2,7 @@
 
 require 'sinatra'
 require 'pathname'
+require 'kramdown-parser-gfm'
 
 set :root, Pathname(__dir__) / '..'
 set server: 'thin'
