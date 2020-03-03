@@ -18,7 +18,7 @@ GEM
     faraday_middleware (0.14.0)
       faraday (>= 0.7.4, < 1.0)
     ffi (1.12.2)
-    foreman (0.86.0)
+    foreman (0.87.0)
     gh (0.15.1)
       addressable (~> 2.4.0)
       backports
