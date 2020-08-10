@@ -24,7 +24,7 @@ GEM
     faraday_middleware (1.0.0)
       faraday (~> 1.0)
     ffi (1.12.2)
-    foreman (0.87.1)
+    foreman (0.87.2)
     gh (0.17.0)
       activesupport (~> 5.0)
       addressable (~> 2.4)
