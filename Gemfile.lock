@@ -119,7 +119,7 @@ GEM
       parser (>= 2.7.1.5)
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.2)
-    sequel (5.43.0)
+    sequel (5.44.0)
     sinatra (2.1.0)
       mustermann (~> 1.0)
       rack (~> 2.2)
