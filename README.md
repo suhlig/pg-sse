@@ -1,6 +1,6 @@
 # `pg-sse` - Relays Database Updates to an SSE stream
 
-[![Build Status](https://travis-ci.org/suhlig/pg-sse.svg?branch=master)](https://travis-ci.org/suhlig/pg-sse)
+[![Build Status](https://app.travis-ci.com/suhlig/pg-sse.svg?branch=master)](https://app.travis-ci.com/suhlig/pg-sse)
 
 Listens to a [Postgres channel](https://www.postgresql.org/docs/current/static/sql-listen.html) and distributes any messages to HTTP clients via [server-sent events](https://www.w3.org/TR/eventsource/) (SSE).
 
